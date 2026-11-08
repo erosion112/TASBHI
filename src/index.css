@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-arabic: 'Amiri', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glassmorphism cybernetic sheen */
+.cyber-glass {
+  background: rgba(13, 26, 45, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 242, 254, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.cyber-glass-emerald {
+  background: rgba(8, 30, 26, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 255, 135, 0.22);
+}
+
+.cyber-glass-amber {
+  background: rgba(35, 24, 8, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 215, 0, 0.22);
+}
+
+.cyber-glass-violet {
+  background: rgba(28, 10, 40, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(189, 0, 255, 0.22);
+}
+
+/* Glowing text and drop-shadow utilities */
+.glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.75), 0 0 28px rgba(0, 242, 254, 0.35);
+}
+
+.glow-emerald {
+  text-shadow: 0 0 12px rgba(0, 255, 135, 0.75), 0 0 28px rgba(0, 255, 135, 0.35);
+}
+
+.glow-amber {
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.75), 0 0 28px rgba(255, 215, 0, 0.35);
+}
+
+.glow-violet {
+  text-shadow: 0 0 12px rgba(189, 0, 255, 0.75), 0 0 28px rgba(189, 0, 255, 0.35);
+}

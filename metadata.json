@@ -1,0 +1,6 @@
+{
+  "name": "Futuristic Digital Tasbih",
+  "description": "Cybernetic dark digital tasbih and dhikr instrument featuring full-screen tactile beads with downward drag physics, glowing HUD telemetry, and hardware volume key counting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
